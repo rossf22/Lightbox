@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="lightbox.css">
   <!-- Link to the JavaScript file -->
-  
+  <script src="lightbox.js" defer></script>
 </head>
 <body>
 
@@ -24,10 +24,16 @@
         This section contains the thumbnail images.
         Each image has the class "thumbnail" so JavaScript can find it.
       -->
-      
+      <section class="gallery-section">
         <h2>Photo Gallery</h2>
 
-        
+        <div class="gallery">
+          <img src="images/smpte.jpg" alt="SMPTE color bars" class="thumbnail">
+          <img src="images/indian.jpg" alt="native american test pattern" class="thumbnail">
+          <img src="images/bbc.jpg" alt="bbc test card" class="thumbnail">
+        </div>
+
+      </section>
     </main>
 
     <footer>
@@ -47,21 +53,21 @@
       This inner box holds the larger image and the close button.
       It keeps the content centered inside the dark overlay.
     -->
-    
+    <div class="lightbox-content">
 
       <!--
         Close button.
         Students can click this to hide the lightbox.
       -->
-      
+      <button id="close-btn" class="close-btn">&times;</button>
 
       <!--
         This image will change when a thumbnail is clicked.
         JavaScript replaces the src and alt attributes.
       -->
-      
+      <img id="lightbox-img" src="" alt="">
 
-    
+    </div>
   </section>
 
 </body>

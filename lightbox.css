@@ -2,22 +2,22 @@
    GALLERY SECTION
 ------------------------------------ */
 .gallery {
-   /* Turns this element into a grid container */
-   /* Creates 3 equal-width columns */
-   /* Adds space between the grid items */
+  display: grid; /* Turns this element into a grid container */
+  grid-template-columns: 1fr 1fr 1fr; /* Creates 3 equal-width columns */
+  gap: 1rem; /* Adds space between the grid items */
 }
 
 .thumbnail {
-   /* Makes each image fill the full width of its grid column */
-   /* Removes the small extra space that inline images often have */
+  width: 100%; /* Makes each image fill the full width of its grid column */
+  display: block; /* Removes the small extra space that inline images often have */
   border-radius: 8px; /* Rounds the corners slightly */
   cursor: pointer; /* Changes the cursor to a hand to show the image can be clicked */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Adds a soft shadow to give the image some depth */
-   /* Makes the hover scale effect animate smoothly */
+  transition: all 0.3s ease; /* Makes the hover scale effect animate smoothly */
 }
 
 .thumbnail:hover {
-   /* Slightly enlarges the image on hover */
+  transform: scale(1.02); /* Slightly enlarges the image on hover */
 }
 
 /* ------------------------------------
@@ -27,7 +27,7 @@
   It starts hidden with display: none.
   JavaScript changes it to display: flex when needed. */
 .lightbox {
-   /* Hidden by default until JavaScript shows it */
+  display: none; /* Hidden by default until JavaScript shows it */
   position: fixed; /* Stays in place and covers the whole browser window */
   top: 0; /* Starts at the top edge of the screen */
   left: 0; /* Starts at the left edge of the screen */
