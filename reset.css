@@ -1,0 +1,101 @@
+/*	
+	Filename:		reset.css
+	Description:	reset default HTML styles across browsers
+*/
+
+
+/* MARGINS, PADDING & FONT SIZE 
+-------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+body {
+	line-height: 1;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+
+
+/*  TABLES 
+-------------------------------------------------- */
+caption,
+th {
+	font-weight: bold;
+	text-align:left;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+
+
+/*  FORMS
+-------------------------------------------------- */
+fieldset {
+	border: 1px solid black;
+	padding: 1em;
+}
+
+legend {
+	font-weight: bold;
+}
+
+
+
+/* BORDERS 
+-------------------------------------------------- */
+img {
+	border:0;
+}
+
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor:help;
+}
+
+
+/* MISCELLANEOUS 
+-------------------------------------------------- */
+
+del {
+	text-decoration: line-through;
+}
+
+blockquote, 
+q {
+	quotes: none;
+}
+
+blockquote:before, 
+blockquote:after,
+q:before,
+q:after {
+	content: " ";
+	content: none;
+}
